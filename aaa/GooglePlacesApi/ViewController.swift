@@ -80,7 +80,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         let lat = location.coordinate.latitude
         let lng = location.coordinate.longitude
         let radius = 1500
-        let apiKey = "AIzaSyAsngUw5OXMiFZ4X0nie3-UVo9NHhSEB30"
+        let apiKey = "YOUR API KEY"
 
         let urlStr = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=\(lat),\(lng)&radius=\(radius)&type=\(category)&key=\(apiKey)"
         guard let url = URL(string: urlStr) else {
